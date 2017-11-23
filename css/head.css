@@ -1,0 +1,487 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ededed;
+	
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 400;
+}
+li{
+	list-style: none;
+	}
+.head{
+	width: 100%;
+	height: 98px;
+	border: 1px solid #8e8e8e;
+	background: #000;
+}
+.header{
+	width: 1220px;
+	height: 98px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+.header .logo{
+	/*width: 385px;*/
+	float: left;
+}
+.header .logo h1 a{
+	display: block;
+	height: 50px;
+	width: 50px;
+	background: url(../images/logo.png) no-repeat 0 0px;
+	background-size: cover;
+	margin-top: 20px;
+}
+.header .nav{
+	float: left;
+	
+}
+.nav .navlist{
+	line-height: 28px;
+	margin: 36px 40px 0 340px;
+}
+.nav .navlist li{
+	
+	/*line-height: 93px;*/
+	float: left;
+	/*margin: 0 25px;*/
+	
+}
+.nav .navlist li a{
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+	color: #c8c8c8;
+	transition: all 0.15s ease-out;
+	padding: 0 25px;
+}
+.nav .navlist li a:hover{
+	color: #fff;
+}
+.buy-car{
+	float: right;
+	
+}
+.buylist{
+	margin-top: 37px;
+}
+.buy-car .buylist li{
+	/*width: 60px;*/
+	height: 24px;
+	float: left;
+}
+.buy-car .user{
+	position: relative;
+}
+.buy-car .user .personImg{
+	display: block;
+	width:36px;
+	height: 20px;
+	
+	background: url(../images/userbuy.png) no-repeat;
+	background-position:-60px 2px;
+	
+}
+.buy-car .user .personImg:hover{
+	background: url(../images/userbuy.png) no-repeat;
+	background-position:0px 2px;
+}
+.buy-car .user:hover .person-center{
+	display: block;
+}
+.buy-car .shop-car{
+	margin-left: 15px;
+	position: relative;
+	z-index: 9999;
+}
+.buy-car .shop-car:hover .shopCar{
+	/*display: block;*/
+	/*transition: all 0.15s ease-out;*/
+}
+.buy-car .shop-car a{
+	display: block;
+	float: left;
+	width: 36px;
+	height: 20px;
+	background: url(../images/userbuy.png) no-repeat;
+	background-position:-58px -20px;
+}
+.buy-car .shop-car a:hover{
+	background: url(../images/userbuy.png) no-repeat;
+	background-position:2px -20px;
+}
+.buy-car .shop-car .num-car{
+	display: block;
+	float: left;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	font-size: 9px;
+	background: #999999;
+	color: #fff;
+	margin-top: 2px;
+	cursor: pointer;
+}
+.person-center{
+	position: absolute;
+	top:40px;
+	left: -70px;
+	width: 168px;
+	height: 378px;
+	border-radius: 8px;
+	background: #fff;
+	display: none;
+	z-index: 9999;
+}
+.personal{
+	box-sizing: border-box;
+	width: 168px;
+	height: 108px;
+	position: relative;
+	padding-top: 21px;
+}
+.personal p:nth-child(1){
+	width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: -10px;
+    left: 75px;
+}
+.personal p:nth-child(2){
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	background: url(../images/user-avatar_d6c83a2e26.png) no-repeat;
+	background-size:cover ;
+	margin:0px auto;
+	
+}
+.personal p:nth-child(3){
+	text-align: center;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.buy-car .user .person-center .centerlist li{
+	width: 168px;
+	height: 45px;
+	
+}
+ .person-center .centerlist li a{
+	display: block;
+	box-sizing: border-box;
+	height: 45px;
+	width: 168px;
+	padding: 15px 0;
+	border-top: 1px solid #f5f5f5;
+	text-decoration: none;
+	font-size: 11px;
+	color: #616161;
+}
+.person-center .centerlist li a:hover{
+	background: #fafafa;
+}
+.buy-car .user .person-center .centerlist li a span{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 13px;
+	margin-left: 23px;
+}
+.buy-car .user .person-center .centerlist li a .indent{
+	
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -2px -44px;
+	
+}
+.buy-car .user .person-center .centerlist li a .serve{
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -23px -44px;
+}
+.buy-car .user .person-center .centerlist li a .discounts{
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -22px -83px;
+}
+.buy-car .user .person-center .centerlist li a .account{
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -2px -64px;
+}
+.buy-car .user .person-center .centerlist li a .address{
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -23px -64px;
+}
+.buy-car .user .person-center .centerlist li a .exit{
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -2px -84px;
+}
+
+.shopCar{
+	width: 360px;
+	height: 314px;
+	background: #fff;
+	border-radius: 8px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 38px;
+	left: -300px;
+	/*opacity: 0;*/
+	display: none;
+	
+}
+.shop-car .showCar{
+	width: 360px;
+	/*overflow: hidden;*/
+	background: #fff;
+	border-radius: 8px;
+	position: absolute;
+	top: 38px;
+	left: -300px;
+	/*opacity: 0;*/
+	display: none;
+	/*border: 1px solid red;*/
+}
+.shop-car .showCar .position-p{
+	width: 14px;
+	height: 7px;
+	position: absolute;
+	top: -7px;
+	left: 310px;
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -52px -44px;
+}
+.shop-car .show-car li{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	border-bottom: 1px solid lightgray;
+	height: 110px;
+	position: relative;
+}
+.shop-car .show-car li:hover .delete{
+	opacity: 1;
+	transition: all 0.15s ease-out; 
+}
+.shop-car .show-car li .delete{
+	opacity: 0;
+	width: 15px;
+	height: 15px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 50%;
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 15px;
+	color: rgba(0,0,0,.4);
+	cursor: pointer;
+}
+.shop-car .show-car li .delete:hover{
+	background: rgba(0,0,0,.2);
+}
+.shop-car .show-car .p-img{
+	width: 54px;
+	height: 54px;
+	border: 1px solid rgba(0,0,0,.2);
+	padding: 10px;
+	float: left;
+}
+.shop-car .show-car .p-img img{
+	display: block;
+	width: 54px;
+	height: 54px;
+}
+.shop-car .show-car .right-desc{
+	float: left;
+	margin-left: 15px;
+}
+.shop-car .show-car .right-desc h3{
+	font-size: 16px;
+	color: #424242;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.shop-car .show-car .right-desc p{
+	font-size: 12px;
+	color: #b2b2b2;
+}
+.shop-car .show-car .right-desc div{
+	margin-top: 10px;
+}
+.shop-car .show-car .right-desc div p{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.shop-car .show-car .right-desc .p1{
+	color: #de4037;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+}
+.shop-car .show-car .right-desc .p1 i{
+	font-style: normal;
+	font-size: 12px;
+}
+.shop-car .showCar .settle{
+	clear: both;
+	background: rgba(0,0,0,.05);
+	box-sizing: border-box;
+	padding: 10px;
+	height: 80px;
+	width: 100%;
+}
+.shop-car .showCar .settle .settle-left{
+	float: left;
+	margin-left: 20px;
+}
+.shop-car .showCar .settle .settle-left p:nth-child(1){
+	font-size: 12px;
+	color: #b2b2b2;
+	margin-top: 10px;
+}
+.shop-car .showCar .settle .settle-left p:nth-child(2){
+	font-size: 14px;
+	color: rgba(0,0,0,.6);
+	margin-top: 8px;
+}
+.shop-car .showCar .settle .settle-left p:nth-child(2) span{
+	color:#de4037;
+	font-weight: 700;
+}
+.shop-car .showCar .settle .settle-right{
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+	
+}
+.shop-car .showCar .settle .settle-right span{
+	display: block;
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	background: #779ae9;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.shop-car .showCar .settle .settle-right span:hover{
+	background: #5c85e5;
+}
+.shopCar p:nth-child(1){
+	width: 14px;
+	height: 7px;
+	position: absolute;
+	top: -7px;
+	left: 310px;
+	background: url(../images/account-icon_32d87deb02.png) no-repeat;
+	background-position: -52px -44px;
+}
+.shopCar p:nth-child(2) img{
+	display: block;
+	margin: 80px auto;
+	margin-bottom: 20px;
+}
+.shopCar h2{
+	font-size: 17px;
+	color: #5f5f5f;
+	text-align: center;
+}
+.shopCar p:nth-of-type(3){
+	text-align: center;
+	font-size: 11px;
+	color: #bcbcbc;
+	margin-top: 10px;
+}
+
+/*以上是头部*/
+/*====================*/
+.banner-nav{
+	width: 1220px;
+	height: 90px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 31px 0;
+}
+.banner-nav ul{
+	height: 28px;
+	line-height: 28px;
+	margin-left: 15px;
+}
+.banner-nav ul li{
+	list-style: none;
+	float: left;
+}
+.banner-nav ul li a{
+	display: block;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #666;
+	text-decoration: none;
+	transition: all 0.15s ease-out;
+}
+.banner-nav ul li:nth-child(1) a{
+	font-weight: 900;
+}
+.banner-nav ul li a:hover{
+	color:dodgerblue;
+}
+/*//以上是导航部分
+*/
+
+.top-nav{
+	width: 100%;
+	height: 63px;
+	background: #f6f6f6;
+	border-bottom: 1px solid #ededed;
+	box-shadow: 1px 1px 5px #ededed;
+	/*opacity: 0;
+	filter: alpha(opacity=0);*/
+	position: fixed;
+	top: 0px;
+	z-index: 9;
+	display: none;
+	/*overflow: hidden;*/
+}
+.top-nav .top-nav-list{
+	width: 1220px;
+	height: 63px;
+	margin: 0 auto;
+}
+.top-nav .top-nav-list .top-nav-ul{
+	float: left;
+	margin-left: 15px;
+}
+.top-nav .top-nav-list .top-nav-ul li{
+	list-style: none;
+	float: left;
+}
+.top-nav .top-nav-list .top-nav-ul li a{
+	display: block;
+	padding: 0 20px;
+	font-size: 14px;
+	line-height: 63px;
+	color: #666;
+	text-decoration: none;
+	transition: all 0.15s ease-out;
+}
+.top-nav .top-nav-list .top-nav-ul li:nth-child(1) a{
+	font-weight: 900;
+}
+.top-nav .top-nav-list .top-nav-ul li a:hover{
+	color:dodgerblue;
+}
+.top-nav .buylist{
+	margin-top: 18px;
+}

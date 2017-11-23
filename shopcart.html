@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopcart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<!--<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+		<script type = "text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/shopcart.js"></script>-->
+		<script type="text/javascript" src="js/require.js" defer async="true" data-main = "js/main"></script>
+	</head>
+	<body>
+		<div class = "head">
+			<div class = "header">
+				<div class = "logo"><h1>
+					<a href = "http://www.smartisan.com" title="锤子科技官网"></a>
+				</h1></div>
+				<div class = "nav">
+					<ul class = "navlist">
+						<li><a href = "#">在线商城</a></li>
+						<li><a href = "#">坚果 Pro</a></li>
+						<li><a href = "#">Smartisan OS</a></li>
+						<li><a href = "#">欢喜云</a></li>
+						<li><a href = "#">应用下载</a></li>
+						<li><a href = "#">官方论坛</a></li>
+					</ul>
+				</div>
+				<div class = "buy-car">
+					<ul class="buylist">
+						<li class = "user">
+							<a class="personImg" href="login.html"></a>
+							<div class = "person-center">
+								<div class = "personal">
+									<p></p>
+									<p></p>
+									<p>12345678902</p>
+								</div>
+								<ul class = "centerlist">
+									<li><a href = "#"><span class = "indent"></span>我的订单</a></li>
+									<li><a href = "#"><span class = "serve"></span>售后服务</a></li>
+									<li><a href = "#"><span class = "discounts"></span>我的优惠</a></li>
+									<li><a href = "#"><span class = "account"></span>账户资料</a></li>
+									<li><a href = "#"><span class = "address"></span>收货地址</a></li>
+									<li><a href = "#"><span class = "exit"></span>退出</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--以上是头部-->
+		
+		<div class = "cart-box">
+			<header class = "title-header">
+				<h3>购物清单</h3>
+			</header>
+			<div class = "cart-null">
+				<h3>您的购物车中还没有商品</h3>
+				<a href = "detail.html">现在选购</a>
+			</div>
+			<div class = "cart-info">
+				<div class = "caption">
+					<span class = "name">商品信息</span>
+					<span class = "operate span">操作</span>
+					<span class = "subtotal span">小计</span>
+					<span class = "num span">数量</span>
+					<span class = "price span">单价</span>
+				</div>
+				<div class = "cart-con">
+					<!--<div class = "goods_desc">
+						<div class = "choose">
+							<span></span>
+						</div>
+						<div class = "goods_img">
+							<img src="images/2.png"  />
+						</div>
+						<div class = "goods_title">
+							<a href = "#">《索尼设计，塑造现代》</a>
+							<span>平装版</span>
+						</div>
+						
+						<div class = "operation">
+							<a class = "delete-btn">X</a>
+						</div>
+						<div class = "goods_operate">
+							<div class = "goods-price font">￥ <span>259.00</span></div>
+							<div class = "numb">
+								<div class = "select-num">
+									<span class = "down add">-</span>
+									<span class = "value-num">
+										<input type = "text" id = "txt" value = 1 />
+									</span>
+									<span class = "up add">+</span>
+								</div>
+							</div>
+							<div class = "cost font">￥ <span>259.00</span></div>
+						</div>
+					</div>-->
+				</div>
+				
+			</div>
+			<div class = "cart-bottom">
+				<div class = "cart-select">
+					<div class = "btn-select">
+						<span class = "btn-span"></span>全选
+					</div>
+					<div class = "txt"><span>丨</span>删除选中的商品</div>
+				</div>
+				<div class = "shipping">
+					<div class = "shipping-box">
+						<div class = "shipping-total shipping-num">
+							<h4>已选择<i id = "chosed-goods">1</i>件商品</h4>
+							<h5>共计<i id = "all-goods">1</i>件商品</h5>
+						</div>
+						<div class = "shipping-total shipping-price">
+							<h4>应付总额 ：<span>￥</span><i class = "all-money">259.00</i></h4>
+							<h5>应付总额不含运费</h5>
+						</div>
+					</div>
+					<span class = "accounts"><a>现在结算</a></span>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<footer class = "footer">
+		<div class = "foot">
+			<div class = "about">
+				<ul class = "server">
+					<li>
+						<h3>订单服务</h3>
+						<ul>
+							<li><a href = "#">购买指南</a></li>
+							<li><a href = "#">支付方式</a></li>
+							<li><a href = "#">送货政策</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>服务支持</h3>
+						<ul>
+							<li><a href = "#">售后服务</a></li>
+							<li><a href = "#">维修门店</a></li>
+							<li><a href = "#">零售门店</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>自助服务</h3>
+						<ul>
+							<li><a href = "#">热点咨询</a></li>
+							<li><a href = "#">预约购买</a></li>
+							<li><a href = "#">订单物流</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>媒体中心</h3>
+						<ul>
+							<li><a href = "#">新闻动态</a></li>
+							<li><a href = "#">官方视频</a></li>
+							<li><a href = "#">图片资源</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>关于公司</h3>
+						<ul>
+							<li><a href = "#">公司简介</a></li>
+							<li><a href = "#">加入我们</a></li>
+							<li><a href = "#">联系我们</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>关注我们</h3>
+						<ul>
+							<li><a href = "#">新浪微博</a></li>
+							<li><a href = "#">官方微信</a></li>
+							<li><a href = "#">官方贴吧</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class = "contact">
+					<li class = tell><a href = "#">400-619-0909</a></li>
+					<li class = "time">周一至周日 9:00-18:00（仅收市话费）</li>
+					<li class = "online"><a href = "#"><span>?</span>在线帮助</a></li>
+				</ul>
+			</div>
+			<div class = "copyright">
+				<h4>Copyright © 2017, Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司</h4>
+				<ul>
+					<li><a href = "#">法律声明</a></li>
+					<li><a href = "#">隐私条款</a></li>
+					<li><a href = "#">开发者中心</a></li>
+				</ul>
+				<h6>京ICP备14041720号-1&ensp;京ICP证140622号&ensp;京公网安备11010502025474</h6>
+			</div>
+			
+		</div>
+	</footer>
+		
+		
+		
+		
+		
+	</body>
+</html>
